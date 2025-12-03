@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Eventos JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Demonstração de Eventos DOM e addEventListener</h1>
+
+    <section id="exemplo-basico">
+        <h2>1. Exemplo Básico: Click</h2>
+        <button id="btn-click">Clique em Mim</button>
+        <p id="output-click">Status: Aguardando clique...</p>
+    </section>
+
+    <section id="exemplo-objeto-evento">
+        <h2>2. Objeto Evento e Prevenção de Padrão</h2>
+        <a href="https://www.google.com" id="link-prevent">Link que Não Vai a Lugar Nenhum</a>
+        <p id="output-prevent">Status: Clique no link.</p>
+    </section>
+
+    <section id="exemplo-borbulhamento">
+        <h2>3. Borbulhamento (Bubbling )</h2>
+        <div id="div-pai" class="container">
+            Div Pai
+            <div id="div-filho" class="container">
+                Div Filho
+                <button id="btn-neto">Botão Neto</button>
+            </div>
+        </div>
+        <p id="output-bubbling">Status: Clique nos elementos acima.</p>
+    </section>
+
+    <section id="exemplo-remover">
+        <h2>4. Remover Listener (`removeEventListener`)</h2>
+        <button id="btn-remover">Clique para Ativar/Desativar</button>
+        <p id="output-remover">Status: Ativado. Clique no botão.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
